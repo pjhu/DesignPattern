@@ -20,6 +20,6 @@ class Trainer(IStaff):
     def trainer(self):
         return "trainer"
     
-    def update(self):
+    def action(self):
         print "Train method..."
         return "trainer"

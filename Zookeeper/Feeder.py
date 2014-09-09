@@ -1,5 +1,5 @@
 '''
-Created on 
+Created on Sep 8, 2014
 
 @author: pjhu
 '''
@@ -19,6 +19,6 @@ class Feeder(IStaff):
     def feeder(self):
         return "feeder"
     
-    def update(self):
+    def action(self):
         print "Feed method..."
         return "feeder"

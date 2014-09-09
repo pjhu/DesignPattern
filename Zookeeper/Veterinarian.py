@@ -20,6 +20,6 @@ class Veterinarian(IStaff):
     def veterinarian(self):
         return "veterinarian"
     
-    def update(self):
+    def action(self):
         print "Veterinarian method..."
         return "veterinarian"

@@ -1,5 +1,5 @@
 '''
-Created on 
+Created on Sep 8, 2014
 
 @author: pjhu
 '''
@@ -27,7 +27,7 @@ class Test(unittest.TestCase):
     
     def test_action(self):
         rtn = "feeder"
-        real = self.obj.update()
+        real = self.obj.action()
         self.assertEqual(rtn, real)
 
 

@@ -28,7 +28,7 @@ class Test(unittest.TestCase):
     
     def test_action(self):
         rtn = "trainer"
-        real = self.obj.update()
+        real = self.obj.action()
         self.assertEqual(rtn, real)
 
 
