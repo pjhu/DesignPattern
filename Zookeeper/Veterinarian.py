@@ -1,5 +1,5 @@
 '''
-Created on 
+Created on Sep 8, 2014
 
 @author: pjhu
 '''
@@ -20,5 +20,6 @@ class Veterinarian(IStaff):
     def veterinarian(self):
         return "veterinarian"
     
-    def action(self):
-        return "veterinarian_action"
+    def update(self):
+        print "Veterinarian method..."
+        return "veterinarian"

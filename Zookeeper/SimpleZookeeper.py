@@ -1,5 +1,5 @@
 '''
-Created on
+Created on Sep 9, 2014
 
 @author: pjhu
 '''
@@ -22,12 +22,12 @@ class SimpleZookeeper(object):
         self.vObj = Veterinarian()
         self.staffObj = None
         
-    def staff_type(self, type):
-        if type == 'F':
+    def staff_type(self, T):
+        if T == 'F':
             return 'feeder'
-        elif type == 'T':
+        elif T == 'T':
             return 'trainer'
-        elif type == 'V':
+        elif T == 'V':
             return 'veterinarian'
     
     def staff_noType(self):

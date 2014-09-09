@@ -26,8 +26,8 @@ class Test(unittest.TestCase):
         pass
     
     def test_action(self):
-        rtn = "feeder_action"
-        real = self.obj.action()
+        rtn = "feeder"
+        real = self.obj.update()
         self.assertEqual(rtn, real)
 
 

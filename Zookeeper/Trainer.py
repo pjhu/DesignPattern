@@ -1,5 +1,5 @@
 '''
-Created on 
+Created on Sep 8, 2014
 
 @author: pjhu
 '''
@@ -20,5 +20,6 @@ class Trainer(IStaff):
     def trainer(self):
         return "trainer"
     
-    def action(self):
-        return "trainer_action"
+    def update(self):
+        print "Train method..."
+        return "trainer"

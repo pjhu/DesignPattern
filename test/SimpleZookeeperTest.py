@@ -1,5 +1,5 @@
 '''
-Created on
+Created on Sep 8, 2014
 
 @author: pjhu
 '''
@@ -14,26 +14,24 @@ class Test(unittest.TestCase):
     def tearDown(self):
         del self.obj
         pass
-    
+
     def test_staff_type_feeder(self):
-        type = 'F'
+        T = 'F'
         rtn = 'feeder'
-        real = self.obj.staff_type(type)
+        real = self.obj.staff_type(T)
         self.assertEqual(rtn, real)
         
     def test_staff_type_trainer(self):
-        type = 'T'
+        T = 'T'
         rtn = 'trainer'
-        real = self.obj.staff_type(type)
+        real = self.obj.staff_type(T)
         self.assertEqual(rtn, real)
     
     def test_staff_type_veterinarian(self):
-        type = 'V'
+        T = 'V'
         rtn = 'veterinarian'
-        real = self.obj.staff_type(type)
+        real = self.obj.staff_type(T)
         self.assertEqual(rtn, real)
-        
-
 
 if __name__ == "__main__":
     #import sys;sys.argv = ['', 'Test.testName']

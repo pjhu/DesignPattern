@@ -19,5 +19,6 @@ class Feeder(IStaff):
     def feeder(self):
         return "feeder"
     
-    def action(self):
-        return "feeder_action"
+    def update(self):
+        print "Feed method..."
+        return "feeder"

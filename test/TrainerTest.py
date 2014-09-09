@@ -1,5 +1,5 @@
 '''
-Created on
+Created on Sep 8, 2014
 
 @author: pjhu
 '''
@@ -27,8 +27,8 @@ class Test(unittest.TestCase):
         pass
     
     def test_action(self):
-        rtn = "trainer_action"
-        real = self.obj.action()
+        rtn = "trainer"
+        real = self.obj.update()
         self.assertEqual(rtn, real)
 
 
