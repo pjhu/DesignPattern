@@ -10,7 +10,7 @@ if __name__ == '__main__':
     
     zooS = ZookeeperSubject()
     bj = ZookeeperBJ(zooS)
-    sh = ZookeeperBJ(zooS)
+    sh = ZookeeperSH(zooS)
     
     zooS.setMethodChanged('F1', 'T1')
     zooS.setMethodChanged('F2', 'T2')

@@ -36,7 +36,11 @@ class ZookeeperSubject(ISubject):
     def notifyObserver(self):
         for o in self.observerList:
             o.update(self.feedM, self.trainM)
-        
+    '''
+    def notifyObserver(self):
+        for o in self.observerList:
+            o.update(o, self.feedM)
+    '''
     def getFeedMethod(self):
         feed = Feeder()
         self.zoo.setStaff(feed)

@@ -20,9 +20,15 @@ class Test(unittest.TestCase):
 
 
     def test_getFeedMethod(self):
+        rst = 'feeder'
+        real = self.obj.getFeedMethod()
+        self.assertEqual(rst, real)
         pass
     
     def test_getTrainMethod(self):
+        rst = 'trainer'
+        real = self.obj.getTrainMethod()
+        self.assertEqual(rst, real)
         pass
     
     def test_methodChanged(self):
