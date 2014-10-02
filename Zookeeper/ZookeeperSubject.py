@@ -32,7 +32,7 @@ class ZookeeperSubject(ISubject):
     def removeObserver(self, observer):
         if observer in self.observerList:
             self.observerList.remove(observer)
-    
+    '''
     def notifyObserver(self):
         print "push method"
         print "*****************************************"
@@ -59,6 +59,27 @@ class ZookeeperSubject(ISubject):
         self.feedM = feed
         self.trainM = train
         self.notifyObserver()
+    '''
+    
+    #For pull
+    def notifyObserver(self):
+        print "pull method"
+        print "*****************************************"
+        for o in self.observerList:
+            o.update(self, "otherArgs")
+        print "*****************************************\n"
+
+    def getFeedMethod(self):
+        return self.feedM
+    
+    def getTrainMethod(self):
+        return self.trainM
+        
+    def setMethodChanged(self, feed, train):
+        self.feedM = feed
+        self.trainM = train
+        self.notifyObserver()
+    
     
 if __name__ == "__main__":
     zoo = ZookeeperSubject()

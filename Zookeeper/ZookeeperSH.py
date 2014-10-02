@@ -18,6 +18,7 @@ class ZookeeperSH(IObserver):
         '''
         IObserver.__init__(self)
     
+    '''
     def update(self, feed, train):
         print "Zookeeper in Shanghai: ", feed,train
         self.doSomething(feed,train)
@@ -25,3 +26,10 @@ class ZookeeperSH(IObserver):
     def doSomething(self, feed,train):
         print "do something in Shanghai"
         pass
+    '''
+        
+    #pull
+    def update(self, subject, otherArgs):
+        print "Zookeeper in Shanghai: ", otherArgs
+        print subject.getFeedMethod()
+        print subject.getTrainMethod()
