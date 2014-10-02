@@ -12,13 +12,11 @@ class ZookeeperSH(IObserver):
     '''
 
 
-    def __init__(self, subject):
+    def __init__(self):
         '''
         Constructor
         '''
-        IObserver.__init__(self, subject)
-        self.zooSubject = subject
-        self.zooSubject.registerObserver(self)
+        IObserver.__init__(self)
     
     def update(self, feed, train):
         print "Zookeeper in Shanghai: ", feed,train

@@ -5,7 +5,6 @@ Created on Sep 9, 2014
 '''
 
 from IObserver import IObserver
-from ZookeeperSubject import ZookeeperSubject
 
 class ZookeeperBJ(IObserver):
     '''
@@ -13,13 +12,11 @@ class ZookeeperBJ(IObserver):
     '''
 
 
-    def __init__(self, subject):
+    def __init__(self):
         '''
         Constructor
         '''
-        IObserver.__init__(self, subject)
-        self.zooSubject = subject
-        self.zooSubject.registerObserver(self)
+        IObserver.__init__(self)
     
     def update(self, feed, train):
         print "Zookeeper in Beijing: ", feed,train
