@@ -4,14 +4,13 @@ Created on Sep 8, 2014
 @author: pjhu
 '''
 import unittest
-from Zookeeper.Trainer import Trainer
-
+from ObserverAndDIP.Feeder import Feeder
 
 class Test(unittest.TestCase):
 
 
     def setUp(self):
-        self.obj = Trainer()
+        self.obj = Feeder()
         pass
 
 
@@ -20,14 +19,14 @@ class Test(unittest.TestCase):
         pass
 
 
-    def test_trainer(self):
-        rtn = "trainer"
-        real = self.obj.trainer()
+    def test_feeder(self):
+        rtn = "feeder"
+        real = self.obj.feeder()
         self.assertEqual(rtn, real)
         pass
     
     def test_action(self):
-        rtn = "trainer"
+        rtn = "feeder"
         real = self.obj.action()
         self.assertEqual(rtn, real)
 

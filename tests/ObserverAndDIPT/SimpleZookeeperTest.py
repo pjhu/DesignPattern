@@ -4,7 +4,7 @@ Created on Sep 8, 2014
 @author: pjhu
 '''
 import unittest
-from Zookeeper.SimpleZookeeper import SimpleZookeeper
+from ObserverAndDIP.SimpleZookeeper import SimpleZookeeper
 
 class Test(unittest.TestCase):
     def setUp(self):

@@ -4,7 +4,7 @@ Created on Sep 8, 2014
 @author: pjhu
 '''
 import unittest
-from Zookeeper.Veterinarian import Veterinarian
+from ObserverAndDIP.Veterinarian import Veterinarian
 
 
 

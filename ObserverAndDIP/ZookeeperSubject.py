@@ -4,8 +4,8 @@ Created on Sep 9, 2014
 @author: joseph
 '''
 from SimpleZookeeper import SimpleZookeeper
-from Zookeeper.Feeder import Feeder
-from Zookeeper.Trainer import Trainer
+from Feeder import Feeder
+from Trainer import Trainer
 
 from ISubject import ISubject
 

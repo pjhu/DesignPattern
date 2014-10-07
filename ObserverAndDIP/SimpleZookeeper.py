@@ -3,9 +3,9 @@ Created on Sep 9, 2014
 
 @author: pjhu
 '''
-from Zookeeper.Feeder import Feeder
-from Zookeeper.Trainer import Trainer
-from Zookeeper.Veterinarian import Veterinarian
+from Feeder import Feeder
+from Trainer import Trainer
+from Veterinarian import Veterinarian
 
 class SimpleZookeeper(object):
     '''

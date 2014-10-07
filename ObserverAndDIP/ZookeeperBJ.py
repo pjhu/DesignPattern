@@ -20,7 +20,7 @@ class ZookeeperBJ(IObserver):
     
     '''
     def update(self, feed, train):
-        print "Zookeeper in Beijing: ", feed,train
+        print "ObserverAndDIP in Beijing: ", feed,train
         self.doSomething(feed,train)
     
     def doSomething(self, feed,train):
@@ -30,6 +30,6 @@ class ZookeeperBJ(IObserver):
         
     #pull
     def update(self, subject, otherArgs):
-        print "Zookeeper in Beijing: ", otherArgs
+        print "ObserverAndDIP in Beijing: ", otherArgs
         print subject.getFeedMethod()
         print subject.getTrainMethod()

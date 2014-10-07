@@ -4,7 +4,7 @@ Created on Sep 9, 2014
 @author: pjhu
 '''
 import unittest
-from Zookeeper.ZookeeperBJ import ZookeeperBJ
+from ObserverAndDIP.ZookeeperSH import ZookeeperSH
 from mock import Mock
 
 class Test(unittest.TestCase):
@@ -12,7 +12,7 @@ class Test(unittest.TestCase):
 
     def setUp(self):
         subject = Mock()
-        self.obj = ZookeeperBJ(subject)
+        self.obj = ZookeeperSH()
         pass
 
 

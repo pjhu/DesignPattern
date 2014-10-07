@@ -1,4 +1,0 @@
-DesignPattern
-=============
-
-Design Pattern example
