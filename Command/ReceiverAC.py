@@ -4,7 +4,7 @@ Created on Oct 7, 2014
 @author: pjhu
 '''
 
-class ReceiverTV(object):
+class ReceiverAC(object):
     '''
     classdocs
     '''
@@ -14,6 +14,7 @@ class ReceiverTV(object):
         '''
         Constructor
         '''
+        self.temp = 25
         
     def actionOpen(self):
         print "actionOpen"
@@ -21,5 +22,6 @@ class ReceiverTV(object):
     def actionClose(self):
         print "actionClose"
         
-    def actionChange(self):
-        print "actionChange"
+    def actionAddTemp(self):
+        self.temp += 1
+        print "actionAddTemp: ", self.temp

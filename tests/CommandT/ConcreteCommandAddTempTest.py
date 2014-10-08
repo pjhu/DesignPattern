@@ -4,7 +4,7 @@ Created on Oct 7, 2014
 @author: pjhu
 '''
 import unittest
-from Command.InvokerControler import InvokerControler
+from Command.ConcreteCommandAddTemp import ConcreteCommandAddTemp
 
 class Test(unittest.TestCase):
 
@@ -17,10 +17,7 @@ class Test(unittest.TestCase):
         pass
 
 
-    def test_addCommand(self):
-        pass
-    
-    def test_runCommand(self):
+    def test_execute(self):
         pass
 
 

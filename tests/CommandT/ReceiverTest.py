@@ -4,7 +4,7 @@ Created on Oct 7, 2014
 @author: pjhu
 '''
 import unittest
-from Command.ReceiverTV import ReceiverTV
+from Command.ReceiverAC import ReceiverAC
 
 class Test(unittest.TestCase):
 

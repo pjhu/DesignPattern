@@ -6,7 +6,7 @@ Created on Oct 7, 2014
 
 from ICommand import ICommand
 
-class ConcreteCommandChange(ICommand):
+class ConcreteCommandAddTemp(ICommand):
     '''
     classdocs
     '''
@@ -20,4 +20,4 @@ class ConcreteCommandChange(ICommand):
         self.receiver = receiver
         
     def execute(self):
-        self.receiver.actionChange()
+        self.receiver.actionAddTemp()
