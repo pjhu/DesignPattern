@@ -10,10 +10,12 @@ class Test(unittest.TestCase):
 
 
     def setUp(self):
+        self.obj = ReceiverAC()
         pass
 
 
     def tearDown(self):
+        del self.obj
         pass
 
 
@@ -23,7 +25,10 @@ class Test(unittest.TestCase):
     def test_actionClose(self):
         pass
     
-    def test_actionChange(self):
+    def test_actionAddTemp(self):
+        self.obj.temp = -2
+        self.obj.actionAddTemp()
+        self.assertEqual(self.obj.temp, -1)
         pass
 
 
