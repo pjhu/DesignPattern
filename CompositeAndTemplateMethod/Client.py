@@ -6,10 +6,10 @@ Created on Oct 12, 2014
 
 if __name__ == '__main__':
     from ITSComposite import ITSComposite
-    from ITCLeaf import ITCLeaf
-    tc1 = ITCLeaf("tc1")
-    tc2 = ITCLeaf("tc2")
-    tc3 = ITCLeaf("tc3")
+    from RealTc import RealTc
+    tc1 = RealTc("tc1")
+    tc2 = RealTc("tc2")
+    tc3 = RealTc("tc3")
     
     tsRoot = ITSComposite("tsRoot")
     tsHT = ITSComposite("tsHT")
